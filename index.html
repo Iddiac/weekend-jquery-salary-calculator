@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jQuery.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>Salary Calculator</h1>
+        <p>Add Employee</p>
+    </header>
+    <!-- input fields.. input id="" placeholder=""-->
+    <div class="Info">
+        <input id="First-Name" placeholder="First Name" >
+        <input id="Last-Name" placeholder="Last Nnme">
+        <input id="Id-Number" placeholder="ID" >
+        <input id="Title" placeholder="title" >
+        <input type="number" id="Annual-Salary" placeholder="Annual Salary">
+        <button id="Submit"> Submit</button> 
+    </div>
+    <p>Employees</p>
+    <table>
+        <thead>
+            <tr>
+                <th> First Name </th>
+                <th>Last Name</th>
+                <th>ID</th>
+                <th>title</th>
+                <th>Annual Salary</th>
+                <th></th>
+
+            </tr>
+
+        </thead>
+
+        <tbody class="body">
+
+
+        </tbody>
+
+
+    </table>
+    <!--Total monthly:0 is purely placeholder text-->
+    <p id="Total"> Total Monthly: $0</p>
+</body>
+
+</html>
