@@ -14,3 +14,9 @@ border: 1px solid;
 table{
     border-collapse: collapse;
 }
+
+th{
+    color: green;
+    text-align: center;
+    background-color: palevioletred;
+}
