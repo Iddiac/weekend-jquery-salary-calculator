@@ -10,11 +10,13 @@ function onReady() {
     } 
     */
     $(`#Submit`).on('click', submit);
-    $(`#Submit`).on('click', monthlyCalc);
     $(`.body`).on(`click`, '.delete-button', remove);
+    // DELETE button broke and i do not know why.
+    // Update fixed
     
 };
 let monthly = 0;
+let annual = [];
 // THIS FUNCTION IS AMAZING AND WORKSSS
 function submit() {
     console.log('im in submit');
@@ -66,4 +68,4 @@ function remove(event) {
 // //     }
 // //     monthly /= 12;
 
-//  
+//     // it wouldn't let me push
