@@ -66,5 +66,4 @@ function remove(event) {
 // //     }
 // //     monthly /= 12;
 
-//     // it wouldn't let me push
-}
+//  
