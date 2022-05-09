@@ -12,6 +12,7 @@ function onReady() {
     $(`#Submit`).on('click', submit);
     $(`#Submit`).on('click', monthlyCalc);
     $(`.body`).on(`click`, '.delete-button', remove);
+    
 };
 let monthly = 0;
 let annual = [];
@@ -29,6 +30,16 @@ function submit() {
     let AnnualSalary = $(`#Annual-Salary`).val();
     $("#Annual-Salary").val('');
     annual.push(AnnualSalary);
+
+    monthly += AnnualSalary/12;
+
+    $('#Total').empty();
+    $("#Total").append('Monthly Cost ', monthly.toFixed(2));
+
+    if (monthly > 20000) {
+        $(".below").addClass('Red');
+
+    }
 
 
     $(`.body`).prepend(`
@@ -51,15 +62,10 @@ function remove(event) {
 
 
 function monthlyCalc() {
-    for (let i = 0; i < annual.length; i++) {
-        monthly += annual[i];
-    }
-    monthly /= 12;
-    $('#Total').empty();
-    $("#Total").append('Monthly Cost ', monthly);
-    if (monthly > 20000) {
-        $(".below").addClass('Red');
+//    // for (let i = 0; i < annual.length; i++) {
+//         monthly += annual[i];
+//     }
+//     monthly /= 12;
 
-    }
     // it wouldn't let me push
 }
