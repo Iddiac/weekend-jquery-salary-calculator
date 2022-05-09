@@ -61,4 +61,5 @@ function monthlyCalc() {
         $(".below").addClass('Red');
 
     }
+    // it wouldn't let me push
 }
