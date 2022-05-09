@@ -15,7 +15,6 @@ function onReady() {
     
 };
 let monthly = 0;
-let annual = [];
 // THIS FUNCTION IS AMAZING AND WORKSSS
 function submit() {
     console.log('im in submit');
@@ -61,11 +60,11 @@ function remove(event) {
 }
 
 
-function monthlyCalc() {
-//    // for (let i = 0; i < annual.length; i++) {
-//         monthly += annual[i];
-//     }
-//     monthly /= 12;
+// function monthlyCalc() {
+// //    // for (let i = 0; i < annual.length; i++) {
+// //         monthly += annual[i];
+// //     }
+// //     monthly /= 12;
 
-    // it wouldn't let me push
+//     // it wouldn't let me push
 }
